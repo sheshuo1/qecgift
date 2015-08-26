@@ -1,0 +1,6 @@
+D:\qecgift\qecgift\bin\Debug\qecgift.exe.config
+D:\qecgift\qecgift\bin\Debug\qecgift.exe
+D:\qecgift\qecgift\bin\Debug\qecgift.pdb
+D:\qecgift\qecgift\obj\x86\Debug\qecgift.csprojResolveAssemblyReference.cache
+D:\qecgift\qecgift\obj\x86\Debug\qecgift.exe
+D:\qecgift\qecgift\obj\x86\Debug\qecgift.pdb

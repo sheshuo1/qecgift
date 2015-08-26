@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="qec_1" Class="qec1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TTADMINISTRATOR;Initial Catalog=qec_1;Persist Security Info=True;User ID=glsa" SettingsObjectName="qecgift.Properties.Settings" SettingsPropertyName="qec_1ConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.t_user_info" Member="t_user_info">
+    <Type Name="t_user_info">
+      <Column Name="user_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="user_nickname" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="curr_map" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="user_level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="hit_rate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="crit_rate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="create_time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="last_enter" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="last_req" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="arrive_level" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="user_exp" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="user_gem" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="user_gold" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="evade_rate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fight" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="main" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="knapsac_num" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="head_pic" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="card_exp" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="vip" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="topup_num" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

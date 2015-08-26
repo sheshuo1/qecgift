@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="qec_0" Class="qecDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TTADMINISTRATOR;Initial Catalog=qec_0;Persist Security Info=True;User ID=sa" SettingsObjectName="qecgift.Properties.Settings" SettingsPropertyName="qec_0ConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.t_testuser" Member="t_testuser">
+    <Type Name="t_testuser">
+      <Column Name="user_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="user_name" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="groupid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="gifttimes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="kodname" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="code" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="reg_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_vip" Member="t_vip">
+    <Type Name="t_vip">
+      <Column Name="vip_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="topUp_num" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="mopUp" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="buy_main" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="buy_gold" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="reset_boss" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="buy_athletics" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="speed_onHook" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="unlock_boss" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="offLine" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="unlock_ath_cd" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="unlock_skip_ath" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="unlock_random_gold" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="dispatch_time_reduction" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="accelerate_dispatch" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="boss_gold" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="random_event_sum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dispatch_gold_add" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="event_refresh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dispatch_meanwhile_num" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="unlock_finish_dispatch" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="unlock_finish_all_random" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.t_giftlog" Member="t_giftlog">
+    <Type Name="t_giftlog">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="addgem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="addtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
